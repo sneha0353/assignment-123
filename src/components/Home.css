@@ -1,0 +1,38 @@
+body {
+    background-image: url('../images/breaking-bad-6.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+  #gs {
+  border-radius: 4px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 16px;
+  }
+
+  #gs div {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #gs div:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: 0.5s;
+  }
+  
+  #gs:hover div {
+    padding-right: 25px;
+  }
+  
+  #gs:hover div:after {
+    opacity: 1;
+    right: 0;
+  }
